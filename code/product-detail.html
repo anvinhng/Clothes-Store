@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category-style.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <script src="js/function.js"></script>
+    <title>Product Detail</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <a href="index.html"><img id="headLogo" src="images/logo.png"></a>
+        </section>
+    </header>
+
+    <!-------------Start of nagivation------------------->
+
+    <nav id="navigation">
+
+        <ul id="leftNav">
+            <li> <button class="open-button" onclick="openCloseForm()"><img src="images/user.png"></button></li>
+            <li><a href="shopping-cart.html"><img src="images/cart.png"></a></li>
+            <li><a href="building.html"><img src="images/heart.png"></a></li>
+        </ul>
+
+        <!--Popup form-->
+        <div class="form-popup" id="user">
+            <form class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label><br>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+                <button type="submit" class="btn">Login</button><br>
+                <button type="button" class="btn">Sign Up</button>
+            </form>
+        </div>
+        <!--End of Popup form-->
+
+        <ul id="centerNav">
+            <li id="home"><a href="index.html">
+                    <h2>Home</h2>
+                </a></li>
+            <li id="men"><a href="men-category.html">
+                    <h2>Men Fashion</h2>
+                </a>
+                <div class="sub-nav">
+                    <ul>
+                        <li><a href=#>Shirt</a></li>
+                        <li><a href=#>T-Shirt</a></li>
+                        <li><a href=#>Pants</a></li>
+                        <li><a href=#>Sport Clothes</a></li>
+                        <li><a href=#>Accesorries</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li id="women"><a href="women-category.html">
+                    <h2>Women Fashion</h2>
+                </a>
+                <div class="sub-nav">
+                    <ul>
+                        <li><a href=#> Shirt</a></li>
+                        <li><a href=#>T-Shirt</a></li>
+                        <li><a href=#>Pants</a></li>
+                        <li><a href=#>Sport Clothes</a></li>
+                        <li><a href=#>Accesorries</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <section id="search">
+            <a href="#"><img id="searchIcon" src="images/search.png"></a>
+            <span><input id="searchBox" type="text"></span>
+        </section>
+    </nav>
+
+    <!-------------Start of main------------------->
+
+    <div id="content">
+        <h3>Fashion > Clothes</h3>
+        <div class="product-detail">
+            <img src="images/clothes.jpg">
+            <div class="product-description">
+                <h2 class="product-name">Twice Hoodie</h2>
+                <div class="product-info">
+                    <p>Product code: <span class="product-code">A123B4</span></p>
+                    <p>Status: <span class="status">Available</span></p>
+                </div>
+                <p class="product-price">300.000 VND</p>
+                <hr>
+                <p>The latest design of Twice merch with high quality material that aims to be your next favourite item.
+                </p>
+                <hr>
+                <div class="form">
+                    <div>
+                        <label for="size">Size:</label>&nbsp;
+                        <form>
+                            <input list="size" name="size" style="width: 80px;">
+                            <datalist id="size">
+                                <option value="S">
+                                <option value="M">
+                                <option value="L">
+                                <option value="XL">
+                            </datalist>
+                        </form>
+                    </div>
+
+                    <div id="quantityForm">
+                        <label for="quantity">Quantity:</label><br>&nbsp;
+                        <input type="number" id="quantity" name="quantity" min="1" max="10">
+                    </div>
+                </div>
+
+                <div id="addCartFavBar">
+                    <button id="addToCart">ADD TO CART</button>
+                    <button><img id="favorite" src="images/red-heart.png"></button>
+                </div>
+
+                <button id="buyNow">BUY NOW</button>
+
+            </div>
+        </div>
+
+        <div class="extra-info">
+            <h2 class="section-title">Product Information</h2>
+            <hr>
+            <div class="extra-info-content">
+                <div>
+                    <p>Gender: <span>Unisex</span></p>
+                    <p>Size run: <span>S-XL</span></p>
+                    <p>Material: <span>Cotton-poly</span></p>
+                    <p>Warranty: <span>1 year</span></p>
+                    <p>Return Policies: <br>
+                    <ul>
+                        <li>Within 5 days since purchase</li>
+                        <li>Only for manufacturing defects</li>
+                        <li>Exchange available to different color and size</li>
+                    </ul>
+                    </p>
+                </div>
+                <img id="sizeChart" src="images/size-chart.jpg">
+            </div>
+        </div>
+
+        <!-------------------Start of similar product---------------------->
+        <main class="similar-product">
+
+            <h2 class="section-title">Similar Products</h2>
+
+            <hr>
+
+            <div class="product-list">
+                <div class="product">
+                    <a href="product-detail.html"><img src="images/clothes-9.jpg">
+                        <p>Description</p>
+                    </a>
+                    <p>300.000 VND</p>
+                </div>
+
+                <div class="product">
+                    <a href="product-detail.html"><img src="images/clothes-2.jpg">
+                        <p>Description</p>
+                    </a>
+                    <p>300.000 VND</p>
+                </div>
+
+                <div class="product">
+                    <a href="product-detail.html"><img src="images/clothes-3.jpg">
+                        <p>Description</p>
+                    </a>
+                    <p>300.000 VND</p>
+                </div>
+
+                <div class="product">
+                    <a href="product-detail.html"><img src="images/clothes-4.jpg">
+                        <p>Description</p>
+                    </a>
+                    <p>300.000 VND</p>
+                </div>
+
+                <div class="product">
+                    <a href="product-detail.html"><img src="images/clothes-5.jpg">
+                        <p>Description</p>
+                    </a>
+                    <p>300.000 VND</p>
+                </div>
+
+                <div class="product">
+                    <a href="product-detail.html"><img src="images/clothes-6.jpg">
+                        <p>Description</p>
+                    </a>
+                    <p>300.000 VND</p>
+                </div>
+
+                <div class="product">
+                    <a href="product-detail.html"><img src="images/clothes-7.jpg">
+                        <p>Description</p>
+                    </a>
+                    <p>300.000 VND</p>
+                </div>
+
+                <div class="product">
+                    <a href="product-detail.html"><img src="images/clothes-8.jpg">
+                        <p>Description</p>
+                    </a>
+                    <p>300.000 VND</p>
+                </div>
+            </div>
+
+            <div id="nextBar">
+                <a href="#" class="previous">&laquo; Previous</a>
+                <a href="#" class="next">Next &raquo;</a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-------------Start of Footer------------------->
+
+    <footer>
+        <div id="footNav">
+            <img id="footLogo" class="desktop" src="images/logo.png">
+            <ul>
+                <li class="foot-nav-title">Join Us</li>
+                <div id="joinUs">
+                    <li><a target="_blank" href="https://facebook.com"><img class="join-us" src="images/fb.png"></a>
+                    </li>
+                    <li><a target="_blank" href="https://instagram.com"><img class="join-us" src="images/ins.png"></a>
+                    </li>
+                    <li><a target="_blank" href="https://twitter.com"><img class="join-us" src="images/tw.png"></a></li>
+                    <li><a target="_blank" href="https://shopee.vn"><img class="join-us" src="images/shopee.png"></a>
+                    </li>
+                </div>
+            </ul>
+
+            <ul>
+                <li class="foot-nav-title">About Us</li>
+                <li><a href="building.html">Our story</a></li>
+                <li><a href="building.html">News</a></li>
+                <li><a href="building.html">Recruitment</a></li>
+            </ul>
+
+            <ul>
+                <li class="foot-nav-title">Store </li>
+                <li>402 NTMK, D3, HCMC</li>
+                <li><a href="tel:02871093333">(028) 7109-3333</a><br></li>
+                <li>Open: 8AM-9PM</li>
+            </ul>
+
+            <ul>
+                <li class="foot-nav-title">Support</li>
+                <li><a href="building.html">FAQs</a></li>
+                <li><a href="building.html">Order track</a></li>
+                <li><a href="building.html">Policies</a></li>
+            </ul>
+        </div>
+        <div id="footNote">
+            <p>Copyright © 2021 VU School. All right reserved. - Designed by VinhAn</p>
+        </div>
+    </footer>
+</body>
+
+</html>

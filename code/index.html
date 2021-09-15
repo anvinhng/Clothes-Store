@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/function.js"></script>
+        <title>VU Store</title>
+    </head>
+
+    <body>
+        <header>
+            <section> 
+                <a href="index.html"><img id="headLogo" src="images/logo.png"></a>
+            </section>
+        </header>
+
+<!-------------Start of nagivation------------------->
+        
+        <nav id="navigation">
+            
+            <ul id="leftNav">
+                <li> <button class="open-button" onclick="openCloseForm()"><img src="images/user.png"></button></li>
+                <li><a href="shopping-cart.html"><img src="images/cart.png"></a></li>
+                <li><a href="building.html"><img src="images/heart.png"></a></li>
+            </ul>
+
+<!--Popup form-->
+            <div class="form-popup" id="user">
+                <form class="form-container">
+                    <h1>Login</h1>
+              
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                <br>
+                    <label for="psw"><b>Password</b></label><br>
+                     <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+                    <button type="submit" class="btn">Login</button><br>
+                    <button type="button" class="btn">Sign Up</button>
+                </form>
+            </div>
+<!--End of Popup form-->
+
+            <ul id="centerNav">
+                <li id="home"><a href="index.html" ><h2>Home</h2></a></li>
+                <li id="men"><a href="men-category.html" ><h2>Men Fashion</h2></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href=#>Shirt</a></li>
+                            <li><a href=#>T-Shirt</a></li>
+                            <li><a href=#>Pants</a></li>
+                            <li><a href=#>Sport Clothes</a></li>
+                            <li><a href=#>Accesorries</a></li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li id="women"><a href="women-category.html"><h2>Women Fashion</h2></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href=#> Shirt</a></li>
+                            <li><a href=#>T-Shirt</a></li>
+                            <li><a href=#>Pants</a></li>
+                            <li><a href=#>Sport Clothes</a></li>
+                            <li><a href=#>Accesorries</a></li>
+                        </ul>
+                    </div>            
+                </li>
+            </ul>
+
+            <section id="search">
+                <a href="#"><img id="searchIcon" src="images/search.png"></a>
+                <span><input id="searchBox" type="text"></span>
+           </section>    
+        </nav>
+
+           
+
+<!-------------Start of aside and main------------------->
+        <img id="banner" src="images/banner.jpg">
+
+        <div id="content">
+            <div >
+                <aside id="sidebar" class="desktop">
+                    <section>
+                        <h3>New Products</h3>
+                        <ul>
+                            <li><a href=#>New Arrivals</a></li>
+                            <li><a href=#>Restock</a></li>
+                            <li><a href=#>Hot Items</a></li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h3>Online Contacts</h3>
+                        <ul>
+                            <li><a href="https://messenger.com">Chat with us</a></li>
+                            <li><a href="tel:02871093333">Call us: (028) 7109 3333 </a></li>
+                        </ul> 
+                        
+                    </section>
+                    
+                    <section>
+                        <h3>Statistics</h3>
+                        <ul>
+                            <li>Current Viewers:<span id="currentViewer">XXX</span></li>
+                            <li>Visited Viewers:<span id="visited">XXX</span></li>
+                        </u>
+                        
+                    </section>
+                </aside>
+
+                <aside id="mobileSidebar" class="mobile">
+                    <ul>
+                        <li><a href=#>New Products</a></li>
+                        <li><a href=#>Online Contact</a></li>
+                        <li><a href=#>Statistics</a></li>
+                    </ul>
+                </aside>
+
+<!-------------------Start of parallel content---------------------->
+
+                <main id="parallelContent">
+                    <section id="hotFashion">
+                        <div id="hotFashionBanner">
+                            <a href="women-category.html"><img src="images/hot-fashion-women.png"></a>
+                            <a href="men-category.html"><img src="images/hot-fashion-men.png"></a>
+                        </div>
+                        
+                        <h2 class="section-title">Hot Fashion</h2>
+                        <hr id=#hotFashionLine>
+                        <p>Designed by top designers. Our latest hot fashion for both men and women will keep you trendy, beautiful and confident everyday.</p>
+                    </section>
+
+                    <section id="aboutVU">
+                        <h2 class="section-title">About VU Store</h2>
+                        
+                        <div id="aboutVUBanner">
+                            <a href="building.html"><img src="images/about-1.jpg"></a>
+                            <a href="building.html"><img src="images/about-2.jpg"></a>
+                         <a href="building.html"><img src="images/about-3.jpg"></a>
+                        </div>
+                        <hr id=#aboutVULine>
+                        <p>Keep the trend. Follow us.</p>
+                    </section>
+                </main>
+            </div>
+<!-------------------Start off nonparallel content---------------------->
+            <div id="nonParallelContent">
+                <a href="product-details"><img class="desktop" id="fashionTrendThumbnail" src="images/fashion-trend.jpg"></a>
+                <h2 class="section-title">Fashion Trend</h2>
+                <hr id=#fashionTrendLine>
+                <section class="productSection">
+                    <ul>
+                        <li><a href="building.html"><img class="fashion-trend-img" src="images/fashion-trend-2.jpg"></a></li>
+                        <li class="fashion-trend-description">Sweatshirt</li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="building.html"><img class="fashion-trend-img" src="images/fashion-trend-3.jpg"></a></li>
+                        <li class="fashion-trend-description">Blazer</li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="building.html"><img class="fashion-trend-img" src="images/fashion-trend-4.jpg"></a></li>
+                        <li class="fashion-trend-description">Sport Clothes</li>
+                    </ul>
+                </section>   
+            </div>
+        </div>
+
+<!-------------Start of Footer------------------->
+
+        <footer>
+            <div id="footNav">
+                <img id="footLogo" class="desktop" src="images/logo.png">
+                <ul>
+                    <li class="foot-nav-title">Join Us</li>
+                    <div id="joinUs">
+                        <li><a target="_blank" href="https://facebook.com"><img class="join-us" src="images/fb.png"></a></li>
+                        <li><a target="_blank" href="https://instagram.com"><img class="join-us" src="images/ins.png"></a></li>
+                        <li><a target="_blank" href="https://twitter.com"><img class="join-us" src="images/tw.png"></a></li>
+                        <li><a target="_blank" href="https://shopee.vn"><img class="join-us" src="images/shopee.png"></a></li>   
+                    </div> 
+                </ul>    
+
+                <ul>
+                    <li  class="foot-nav-title">About Us</li>
+                    <li><a href="building.html">Our story</a></li>
+                    <li><a href="building.html">News</a></li>
+                    <li><a href="building.html">Recruitment</a></li>
+                </ul>
+                    
+                <ul>
+                    <li  class="foot-nav-title">Store </li>
+                    <li>402 NTMK, D3, HCMC</li>
+                    <li><a href="tel:02871093333">(028) 7109-3333</a><br></li>
+                    <li>Open: 8AM-9PM</li>
+                </ul>
+                    
+                <ul>
+                    <li  class="foot-nav-title">Support</li>
+                    <li><a href="building.html">FAQs</a></li>
+                    <li><a href="building.html">Order track</a></li>
+                    <li><a href="building.html">Policies</a></li>
+                </ul>
+            </div>
+            <div id="footNote">
+                <p>Copyright © 2021 VU School. All right reserved. - Designed by VinhAn</p>
+            </div>
+        </footer>
+    </body>
+</html>
